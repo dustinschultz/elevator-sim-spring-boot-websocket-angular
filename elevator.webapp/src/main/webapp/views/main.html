@@ -1,0 +1,96 @@
+<div class="jumbotron ">
+    <h1>{{ main.elevatorFloor }}</h1>
+    <p class="lead"> {{ main.elevatorState }} </p>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="text-center">
+                        <button type=" button " class="btn btn-default" ng-click="main.pressButton(1)" ng-disabled="{{ main.getIsMoving() }}">
+                            <span class="badge" style="font-size:35px;">1</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="text-center">
+                        <button type=" button " class="btn btn-default" ng-click="main.pressButton(2)">
+                            <span class="badge" style="font-size:35px;">2</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="text-center">
+                        <button type=" button " class="btn btn-default" ng-click="main.pressButton(3)">
+                            <span class="badge" style="font-size:35px;">3</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="text-center">
+                        <button type=" button " class="btn btn-default" ng-click="main.pressButton(4)">
+                            <span class="badge" style="font-size:35px;">4</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="text-center">
+                        <button type=" button " class="btn btn-default" ng-click="main.pressButton(5)">
+                            <span class="badge" style="font-size:35px;">5</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2 col-md-offset-1">
+        <p class="lead text-center">Floor 1</p>
+        <div class="text-center">
+            <button type=" button " class="btn btn-default" ng-click="main.up(1) ">
+                <span class="glyphicon glyphicon glyphicon-triangle-top" style="font-size:25px" aria-hidden="true "></span>
+            </button>
+        </div>
+    </div>
+    <div class="col-md-2 ">
+        <p class="lead text-center ">Floor 2</p>
+        <div class="text-center">
+            <button type="button " class="btn btn-default" ng-click="main.up(2) ">
+                <span class="glyphicon glyphicon glyphicon-triangle-top" aria-hidden="true "></span>
+            </button>
+            <button type="button " class="btn btn-default" ng-click="main.down(2) ">
+                <span class="glyphicon glyphicon glyphicon-triangle-bottom" aria-hidden="true "></span>
+            </button>
+        </div>
+    </div>
+    <div class="col-md-2 ">
+        <p class="lead text-center ">Floor 3</p>
+        <div class="text-center">
+            <button type="button " class="btn btn-default" ng-click="main.up(3) ">
+                <span class="glyphicon glyphicon glyphicon-triangle-top" aria-hidden="true "></span>
+            </button>
+            <button type="button " class="btn btn-default" ng-click="main.down(3) ">
+                <span class="glyphicon glyphicon glyphicon-triangle-bottom" aria-hidden="true "></span>
+            </button>
+        </div>
+    </div>
+    <div class="col-md-2 ">
+        <p class="lead text-center ">Floor 4</p>
+        <div class="text-center">
+            <button type="button " class="btn btn-default" ng-click="main.up(4) ">
+                <span class="glyphicon glyphicon glyphicon-triangle-top" aria-hidden="true "></span>
+            </button>
+            <button type="button " class="btn btn-default" ng-click="main.down(4) ">
+                <span class="glyphicon glyphicon glyphicon-triangle-bottom" aria-hidden="true "></span>
+            </button>
+        </div>
+    </div>
+    <div class="col-md-2 ">
+        <p class="lead text-center ">Floor 5</p>
+        <div class="text-center ">
+            <button type="button " class="btn btn-default" ng-click="main.down(5) ">
+                <span class="glyphicon glyphicon glyphicon-triangle-bottom" style="font-size:25px" aria-hidden="true "></span>
+            </button>
+        </div>
+    </div>
+</div>
